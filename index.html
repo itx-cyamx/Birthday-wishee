@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Chotu ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(#050014,#25004d);
+    color:white;
+    font-family:cursive;
+    text-align:center;
+}
+
+h1{
+    margin-top:60px;
+    font-size:45px;
+    color:#ff9de2;
+    text-shadow:0 0 20px #ff00aa;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{transform:scale(1);}
+    to{transform:scale(1.05);}
+}
+
+.message{
+    width:85%;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:25px;
+    box-shadow:0 0 20px pink;
+}
+
+.star{
+    position:absolute;
+    top:-10px;
+    width:7px;
+    height:7px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 15px white;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{transform:translateY(-10vh);}
+    to{transform:translateY(110vh);}
+}
+
+.balloon{
+    position:absolute;
+    bottom:-120px;
+    width:60px;
+    height:75px;
+    border-radius:50%;
+    animation:up 8s infinite;
+}
+
+@keyframes up{
+    from{transform:translateY(0);}
+    to{transform:translateY(-120vh);}
+}
+
+.light{
+    position:absolute;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:pink;
+    filter:blur(70px);
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="light" style="top:20%;left:10%"></div>
+<div class="light" style="bottom:20%;right:10%"></div>
+
+
+<h1>Happy Birthday Chotu ❤️🎂</h1>
+
+
+<div class="message">
+
+Meri pyari si Chotu ❤️✨
+
+<br><br>
+
+Aaj ka din mere liye bahut special hai,
+kyunki aaj ek bahut hi special insaan ka birthday hai 🎂
+
+<br><br>
+
+Meri dua hai ki tumhari life hamesha khushiyon,
+success aur pyari si smiles se bhari rahe ❤️
+
+<br><br>
+
+Tumhare saare sapne pure ho,
+tumhe duniya ki har khushi mile,
+aur tum hamesha aise hi cute aur khush raho 🫶
+
+<br><br>
+
+Kabhi bhi apni smile mat khona,
+kyunki tumhari smile bahut precious hai ✨
+
+<br><br>
+
+Once Again...
+<strong>Happy Birthday Meri Pyari Chotu ❤️🎈</strong>
+
+</div>
+
+
+<script>
+
+// stars
+for(let i=0;i<120;i++){
+let s=document.createElement("div");
+s.className="star";
+s.style.left=Math.random()*100+"%";
+s.style.animationDuration=(2+Math.random()*5)+"s";
+s.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(s);
+}
+
+
+// balloons
+let colors=[
+"#ff4d6d",
+"#ffd166",
+"#06d6a0",
+"#4cc9f0",
+"#c77dff"
+];
+
+for(let i=0;i<20;i++){
+let b=document.createElement("div");
+b.className="balloon";
+b.style.left=Math.random()*100+"%";
+b.style.background=colors[Math.floor(Math.random()*colors.length)];
+b.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(b);
+}
+
+</script>
+
+</body>
+</html>
